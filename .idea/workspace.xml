@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fac21a3f-9412-4892-bb41-12a9864a2fd4" name="Changes" comment="quick fix" />
+    <list default="true" id="fac21a3f-9412-4892-bb41-12a9864a2fd4" name="Changes" comment="quick fix">
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/resources/db/migration/V1.1__Insert.sql" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/resources/db/migration/V1.1__Insert.sql" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,6 +75,11 @@
       <recent name="$PROJECT_DIR$/order-service" />
       <recent name="$PROJECT_DIR$/inventory-service" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean verify" />
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
