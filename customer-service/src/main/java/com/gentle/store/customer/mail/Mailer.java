@@ -53,7 +53,6 @@ public class Mailer {
         try {
             mailSender.send(preparator);
         } catch (final MailSendException | MailAuthenticationException e) {
-            // TODO Wiederholung, um die Email zu senden
             log.warn("Email nicht gesendet: Ist der Mailserver {} erreichbar?", mailhost);
         }
     }

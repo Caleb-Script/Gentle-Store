@@ -112,9 +112,8 @@ public class InventoryWriteService {
                                 log.debug("reserveItem: sumReservedQuantity={}",sumReservedQuantity);
 
                                 if (inventory.getQuantity() < sumReservedQuantity) {
-                                    //todo kafka
-                                    final var verfügbareWare = inventory.getQuantity() - sumReservedQuantity + itemDTO.quantity();
-                                    throw new InsufficientInventoryException(inventory,verfügbareWare,itemDTO);
+                                    final var available = inventory.getQuantity() - sumReservedQuantity + itemDTO.quantity();
+                                    throw new InsufficientInventoryException(inventory,available,itemDTO);
                                 }
                         },
                             () -> {
