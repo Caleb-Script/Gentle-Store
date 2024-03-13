@@ -1,0 +1,17 @@
+
+INSERT INTO login (id, username, password, roles)
+VALUES
+    ('30000000-0000-0000-0000-000000000000','admin','{argon2id}$argon2id$v=19$m=16384,t=3,p=1$QHb5SxDhddjUiGboXTc9S9yCmRoPsBejIvW/dw50DKg$WXZDFJowwMX5xsOun2BT2R3hv2aA9TSpnx3hZ3px59sTW0ObtqBwX7Sem6ACdpycArUHfxmFfv9Z49e7I+TI/g','ADMIN,CUSTOMER,ACTUATOR'),
+    ('30000000-0000-0000-0000-000000000001','gentlecg99','{argon2id}$argon2id$v=19$m=16384,t=3,p=1$QHb5SxDhddjUiGboXTc9S9yCmRoPsBejIvW/dw50DKg$WXZDFJowwMX5xsOun2BT2R3hv2aA9TSpnx3hZ3px59sTW0ObtqBwX7Sem6ACdpycArUHfxmFfv9Z49e7I+TI/g', 'CUSTOMER'),
+    ('30000000-0000-0000-0000-000000000002','asd','{argon2id}$argon2id$v=19$m=16384,t=3,p=1$QHb5SxDhddjUiGboXTc9S9yCmRoPsBejIvW/dw50DKg$WXZDFJowwMX5xsOun2BT2R3hv2aA9TSpnx3hZ3px59sTW0ObtqBwX7Sem6ACdpycArUHfxmFfv9Z49e7I+TI/g', 'CUSTOMER');
+
+INSERT INTO shopping_cart (id, version, total_amount, customer_id, customer_username, is_complete, created, updated)
+VALUES
+    ('50000000-0000-0000-0000-000000000001', 0, 100.50, '00000000-0000-0000-0000-000000000001', 'gentlecg99', false, '2024-03-04 12:00:00', '2024-03-04 12:00:00'),
+    ('50000000-0000-0000-0000-000000000002', 0, 0.0, '00000000-0000-0000-0000-000000000005', 'asd', true, '2024-03-04 12:00:00', '2024-03-04 12:00:00');
+
+
+INSERT INTO item (id,sku_code, quantity, shopping_cart_id, idx)
+VALUES
+    ('70000000-0000-0000-0000-000000000001','asd', 1, '50000000-0000-0000-0000-000000000001', 0),
+    ('70000000-0000-0000-0000-000000000002','yxc', 1, '50000000-0000-0000-0000-000000000001', 1);

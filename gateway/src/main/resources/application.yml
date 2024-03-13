@@ -1,0 +1,75 @@
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+
+spring:
+
+  application:
+    name: api-gateway
+
+  cloud:
+    gateway:
+      mvc:
+        routes[0]:
+          id: product-service
+          uri: lb://product-service
+          predicates[0]: path=/product/**
+        routes[1]:
+          id: order-service
+          uri: lb://order-service
+          predicates[0]: path=/order/**
+        routes[2]:
+          id: customer-service
+          uri: lb://customer-service
+          predicates[0]: Path=/customer/**
+        routes[3]:
+          id: inventory-service
+          uri: lb://inventory-service
+          predicates[0]: path=/inventory/**
+        routes[4]:
+          id: discovery-server
+          uri: http://localhost:8761
+          predicates[0]: path=/eureka/web
+          filters[0]: setPath=/
+        routes[5]:
+          id: discovery-server-static
+          uri: http://localhost:8761
+          predicates[0]: path=/eureka/**
+        routes[6]:
+          id: shoppingCart-server
+          uri: lb://shoppingCart-service
+          predicates[0]: path=/shoppingCart/**
+        routes[7]:
+          id: payment-server
+          uri: lb://payment-service
+          predicates[0]: path=/payment/**
+
+
+management:
+  health:
+    circuitbreakers:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+  tracing:
+    sampling:
+      probability: 1.0
+
+
+
+logging:
+  level:
+    root: INFO
+    org.springframework.cloud.gateway: TRACE
+    org.springframework.cloud.gateway.route.RouteDefinitionLocator: TRACE
+server:
+  port: 8080
