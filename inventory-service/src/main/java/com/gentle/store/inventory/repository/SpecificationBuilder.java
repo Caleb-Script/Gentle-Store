@@ -1,8 +1,6 @@
 package com.gentle.store.inventory.repository;
 
-import com.gentle.store.inventory.entity.Inventory;
-import com.gentle.store.inventory.entity.InventoryStatusType;
-import com.gentle.store.inventory.entity.Inventory_;
+import com.gentle.store.inventory.entity.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Component;

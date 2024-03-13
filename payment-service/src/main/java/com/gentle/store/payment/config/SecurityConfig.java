@@ -1,7 +1,6 @@
 package com.gentle.store.payment.config;
 
 import com.gentle.store.payment.security.Role;
-import com.gentle.store.payment.util.Constants;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;

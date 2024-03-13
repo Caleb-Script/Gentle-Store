@@ -7,7 +7,6 @@ import static java.nio.charset.StandardCharsets.ISO_8859_1;
 public class Constants {
 
     public static final String INVENTORY_CLIENT = "http://inventory-service/inventory";
-    public static final String CUSTOMER_CLIENT = "http://customer-service/customer";
     public static final String ORDER_CLIENT = "http://order-service/order";
 
     public static final String X_FORWARDED_PROTO = "X-Forwarded-Proto";
