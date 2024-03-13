@@ -87,9 +87,11 @@ public class CustomerGetController {
 
         assert customer != null;
         final var currentVersion = STR."\"\{customer.getVersion()}\"";
+
         if (Objects.equals(version.orElse(null), currentVersion)) {
             return status(NOT_MODIFIED).build();
         }
+
         final var model = customerToModel(customer, request);
 
         log.debug("getById: response={}", model);
@@ -108,6 +110,7 @@ public class CustomerGetController {
         final var updateLink = Link.of(idUri, LinkRelation.of("update"));
         final var removeLink = Link.of(idUri, LinkRelation.of("remove"));
         model.add(selfLink, listLink, addLink, updateLink, removeLink);
+
         return model;
     }
 
