@@ -4,25 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fac21a3f-9412-4892-bb41-12a9864a2fd4" name="Changes" comment="quick fix">
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/gentle/store/customer/transfer/Message.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/gentle/store/customer/transfer/TransactionDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/gentle/store/customer/transfer/dto/OrderDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/gentle/store/customer/transfer/response/OrderResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/gentle/store/customer/util/CustomLog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/gentle/store/customer/util/Time.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/resources/application-mail.yml" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/resources/application-mail.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/gentle/store/inventory/InventoryApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/gentle/store/inventory/InventoryApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/gentle/store/order/OrderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/gentle/store/order/OrderApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/src/main/java/com/gentle/store/payment/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/src/main/java/com/gentle/store/payment/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/src/main/java/com/gentle/store/payment/util/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/src/main/java/com/gentle/store/payment/util/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/gentle/store/product/ProductApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/gentle/store/product/ProductApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingCart-service/src/main/java/com/gentle/store/shopping/cart/ShoppingCartApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingCart-service/src/main/java/com/gentle/store/shopping/cart/ShoppingCartApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingCart-service/src/main/java/com/gentle/store/shopping/cart/transfer/OrderDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingCart-service/src/main/java/com/gentle/store/shopping/cart/util/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingCart-service/src/main/java/com/gentle/store/shopping/cart/util/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingCart-service/src/main/java/com/gentle/store/shopping/cart/util/CustomLog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingCart-service/src/main/java/com/gentle/store/shopping/cart/util/MailProps.java" beforeDir="false" />
-    </list>
+    <list default="true" id="fac21a3f-9412-4892-bb41-12a9864a2fd4" name="Changes" comment="quick fix" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,6 +38,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Maven.Gentle-Store [clean,verify].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
