@@ -61,7 +61,7 @@ interface SecurityConfig {
                     ).hasRole(Role.CUSTOMER.name())
                     .requestMatchers(POST, "/dev/db_populate").hasRole(Role.ADMIN.name())
                         .requestMatchers(POST, Constants.CUSTOMER_PATH).hasRole(Role.ADMIN.name())
-                    .requestMatchers(POST, "/graphql", STR."\{AuthController.AUTH_PATH}/login").permitAll()
+                    .requestMatchers(POST, STR."\{AuthController.AUTH_PATH}/login").permitAll()
 
                     .requestMatchers(
                         // Actuator: Health mit Liveness und Readiness fuer Kubernetes
